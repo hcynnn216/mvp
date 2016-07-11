@@ -19,26 +19,45 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  	Appointment-Scheduler
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  	The Appointment-Scheduler is intended to provide doctors, dentists, acupuncturists, massage therapists, and chiropractists a tool to make appointments with patients and keep track of their own schedule. 
+
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  The Appointment-Scheduler is an online application that provide a platform for healthcare providers such as doctors, dentists, acupuncturists, massage therapists, and chiropractists to make appointments with their patients or customers.  The application is a one page web-app that opened to public. Patients or customers can see the schedule of the healthcare provider of the week and be able to just click on an opened time slot of a day to schedule an appointment. Once the appointment is booked, the time slot is changed to gray out and will be unavailable for booking and the patient's information will be saved and hidden from the public. The healthcare provider can then login to their account and reveal their schedule of the week. 
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  The Appointment-Scheduler solves the problem for healthcare providers who otherwise have to monitor phone calls, emails or other forms of communication channel to make appointments with their patients or customers. At the same time, the application also makes it much easier for the patients or customers to schedule appointments because they can see the available time openned for them for the whole week. 
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  Using the Appointment-Scheduler, healthcare providers and patients don't have to interact with each other directly before the appointment solely for scheduling appointments. Instead they only need to open the application and login, they will see their schedule for the week. 
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+ 	In this technology driven age, communications can take many different forms and thru many differnt channel. Information exchanges such as making appointments should use a much more efficient solution than the traditional way like phone calls.
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  To get started is fairly easy. It only need a database for appointments and users, a server that retrieve and save information to the database, and a page for the client who will request and post information to the server.
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  Appointment-Scheduler is a great tool that is simple enough for anybody to use without any training. It solve my problem of having to wait for calls and emails from patients.  
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  Let's brainstorm how we should approach to build this application as it's expected and briefly draw out its structure so we can start.
