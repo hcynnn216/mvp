@@ -99,24 +99,3 @@ gulp.task('start:es6', ['serve:es6'], function () {
 });
 
 // Tests can be written in ES6 too!
-gulp.task('karma:es6', function(done) {
-  new KarmaServer({
-    configFile: __dirname + '/karma.conf.js',
-    preprocessors: {
-      [paths.src.scripts]: ['babel'],
-      [paths.test]: ['babel']
-    },
-    babelPreprocessor: {
-      options: {
-        presets: ['es2015'],
-        sourceMap: 'inline'
-      },
-      filename: function (file) {
-        return file.originalPath;
-      },
-      sourceFileName: function (file) {
-        return file.originalPath;
-      }
-    }
-  }, done).start();
-});

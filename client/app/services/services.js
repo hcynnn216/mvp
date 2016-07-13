@@ -10,8 +10,7 @@ angular.module('scheduler.services', [])
       url: '/api/appointments'
     })
     .then(function (resp) {
-      console.log(resp.appointments);
-      return resp.appointments;
+      return resp.data;
     });
   };
 

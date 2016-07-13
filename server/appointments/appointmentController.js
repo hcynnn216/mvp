@@ -11,7 +11,6 @@ module.exports = {
   allAppointments: function (req, res, next) {
     findAllAppointments({})
       .then(function (Appointments) {
-        console.log(Appointments);
         res.json(Appointments);
       })
       .fail(function (error) {
@@ -20,39 +19,20 @@ module.exports = {
   },
 
   updateAppointments: function (req, res, next) {
-    var appointments = req.body.appointments;
-    console.log(appointments);
+    var appointments = req.body;
+    console.log('appointmentController.js line 24: ', appointments);
 
     createAppointment(appointments)
       .then(function (createdAppointment) {
         if (createdAppointment) {
+          console.log('appointmentController.js line 28: ', createdAppointment);
           res.json(createdAppointment);
         }
       })
       .fail(function (error) {
         next(error);
       });
-  },
 
-  navToAppointment: function (req, res, next) {
-    findAppointment({code: req.params.code})
-      .then(function (Appointment) {
-        if (!Appointment) {
-          return next(new Error('Appointment not added yet'));
-        }
-
-        Appointment.visits++;
-        Appointment.save(function (err, savedAppointment) {
-          if (err) {
-            next(err);
-          } else {
-            res.redirect(savedAppointment.url);
-          }
-        });
-      })
-      .fail(function (error) {
-        next(error);
-      });
   }
 
 };
